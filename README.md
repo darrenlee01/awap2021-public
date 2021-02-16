@@ -10,6 +10,7 @@ Python packages (can be installed via `pip`):
 - pandas
 
 Game package:
+From within the `awap2021-public` folder, run,
 ```
 pip install dist/awap-2021-0.0.1.tar.gz    
 ```
