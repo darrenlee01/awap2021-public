@@ -1,3 +1,4 @@
+# Simple
 num_stations: 5
 station_locations:
   - [320, 200]
@@ -10,10 +11,10 @@ station_shapes:
   - 0
   - 1
   - 2
-  - 2
+  - 3
 station_dist_mean:
   - 0.1
+  - 0.2
   - 0.3
-  - 0.4
-  - 0.5
-  - 0.5
+  - 0.2
+  - 0.1
