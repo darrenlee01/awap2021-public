@@ -11,7 +11,7 @@ def example_network_generator(station_locations, feedback):
 
 if __name__ == '__main__':
     # Load the board file with station locations/types
-    g = Game('./board/board6.yaml')
+    g = Game('./board/board1.yaml')
     SIM_ATTEMPTS = g.getGameConstants('SIM_ATTEMPTS')
     MAX_TRAINS = g.getGameConstants('MAX_TRAINS')
 
