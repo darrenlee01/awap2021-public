@@ -2,13 +2,18 @@
 
 ## Update!
 
-Either clone this repo, or just download the `dist` folder.
+Either clone this repo, or just download `dist\awap-2021-0.0.1.tar.gz`.
 
 Then, run
 ```
 pip uninstall awap-2021
-cd dist
 pip install awap-2021-0.0.1.tar.gz   
+```
+
+Or 
+```
+pip uninstall awap-2021
+pip install {PATH TO REPO}\dist\awap-2021-0.0.1.tar.gz   
 ```
 
 ## Getting Started
