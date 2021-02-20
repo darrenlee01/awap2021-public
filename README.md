@@ -1,5 +1,16 @@
 # AWAP 2021 Starter Code
 
+## Update!
+
+Either clone this repo, or just download the `dist` folder.
+
+Then, run
+```
+pip uninstall awap-2021
+cd dist
+pip install awap-2021-0.0.1.tar.gz   
+```
+
 ## Getting Started
 You will need Python 3.
 
