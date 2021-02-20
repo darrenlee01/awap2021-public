@@ -1,6 +1,7 @@
 from game.game import Game
 import time
 
+BOARD_NAME = './board/board1.yaml'
 def example_network_generator(station_locations, feedback):
     network = {
         0: [0, 1, 2],
@@ -11,7 +12,7 @@ def example_network_generator(station_locations, feedback):
 
 if __name__ == '__main__':
     # Load the board file with station locations/types
-    g = Game('./board/board1.yaml')
+    g = Game(BOARD_NAME)
     SIM_ATTEMPTS = g.getGameConstants('SIM_ATTEMPTS')
     MAX_TRAINS = g.getGameConstants('MAX_TRAINS')
 

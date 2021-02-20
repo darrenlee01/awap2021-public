@@ -136,3 +136,38 @@ SPAWN_DURATION = 5000
 SIM_DURATION = 10000
 These can be accessed via g.getGameConstants
 ```
+
+### Access the board file from your code
+
+**In `main.py`:**
+1. At the top of the file, create variable `BOARD_NAME='./board/board1.yaml'`
+2. replace the first line after `if __name__ == '__main__':`
+with
+```
+g = Game(BOARD_NAME)
+```
+3. In your code, you can write a function like this. 
+```
+def get_board_contents(board_name):
+    with open(board_name, 'r') as board_file:
+        board_content = yaml.load(board_file, Loader=yaml.FullLoader)
+            
+        return 
+        board_content['num_stations'],
+        board_content['station_locations'],
+        board_content['station_shapes'],
+        board_content['station_dist_mean']
+```
+Pass in your `BOARD_NAME` variable to this function.
+
+**In `scoring.py`:**
+Replace the line
+```
+g = Game('./board/board{}.yaml'.format(board_num+1))
+```
+with
+```
+BOARD_NAME = './board/board{}.yaml'.format(board_num+1)
+g = Game(BOARD_NAME)
+```
+Similarly, pass in `BOARD_NAME` to your function that reads the board file.

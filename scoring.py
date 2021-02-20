@@ -11,7 +11,8 @@ def example_network_generator(station_locations, feedback):
 
 if __name__ == '__main__':
     for board_num in range(8):
-        g = Game('./board/board{}.yaml'.format(board_num+1))
+        BOARD_NAME = './board/board{}.yaml'.format(board_num+1)
+        g = Game(BOARD_NAME)
         SIM_ATTEMPTS = g.getGameConstants('SIM_ATTEMPTS')
 
         station_locations = g.getStationLocations()
